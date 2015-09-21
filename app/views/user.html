@@ -1,0 +1,88 @@
+
+
+<div class="app-header">
+  <i class="fa fa-book"></i><span class="project-name">Create Account</span>
+</div>
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1">
+    <div class="row">
+      <form id="userForm" class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="emailTxt">Email</label>  
+            <div class="controls">
+              <input type="email" id="emailTxt" name="emailTxt" ng-model="newuser.email" class="form-control"/>
+            </div>
+          </div>
+
+           <div class="control-group">
+            <label class="control-label" for="fnameTxt">User Name</label>  
+            <div class="controls">
+              <input type="text" id="usernameTxt" name="usernameTxt" ng-model="newuser.username" class="form-control" />
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="fnameTxt">First Name</label>  
+            <div class="controls">
+              <input type="text" id="fnameTxt" name="fnameTxt" ng-model="newuser.first_name" class="form-control" capitalize-first />
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="lnameTxt">Last Name</label>  
+            <div class="controls">
+              <input type="text" id="lnameTxt" name="lnameTxt" ng-model="newuser.last_name" class="form-control" capitalize-first/>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="companyTxt">Company</label>  
+            <div class="controls">
+              <input type="text" id="companyTxt" name="companyTxt" ng-model="newuser.company" class="form-control" ng-click="scrollWin()" capitalize-first/>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="phoneTxt">Phone</label>  
+            <div class="controls">
+              <input type="text" id="phoneTxt" name="phoneTxt" ng-model="newuser.phone" class="form-control" ng-click="scrollWin()" capitalize-first/>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="addressTxt">Address</label>  
+            <div class="controls">
+              <input type="text" id="addressTxt" name="addressTxt" ng-model="newuser.address" class="form-control" ng-click="scrollWin()" capitalize-first/>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="passwordTxt">password </label>  
+            <div class="controls">
+              <input type="password" id="passwordTxt" name="passwordTxt" ng-model="newuser.password" class="form-control" ng-click="scrollWin()"/>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="password_conTxt">password_confirmation</label>  
+            <div class="controls">
+              <!-- <input type="password" id="password_conTxt" name="password_conTxt" ng-model="newuser.password_confirmation" class="form-control" ng-click="scrollWin()" match="newuser.password"/> -->
+              <input class="form-control" type="password" name="password_conTxt" required="" data-ng-model="newuser.password_confirmation" data-ng-match="password" ng-click="scrollWin()"/>
+            </div>
+          </div>
+          <div id="error-div" class="hidden">
+            <h4 class="text-danger ">
+              Email {{error}}              
+            </h4>
+          </div>
+          <br/>
+          <div class="button-group">
+            <button type="submit" role="submit" class="btn btn-primary btn-block" data-loading-text="Please wait. It take" style="width: 95%;">
+              Save
+            </button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

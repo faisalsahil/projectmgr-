@@ -1,0 +1,20 @@
+<div class="app-header">
+  <i class="fa fa-book"></i><span class="project-name">Incident Reports</span>
+</div>
+
+<div id="heading">
+	<h3 class="col-xs-6" style="z-index:10000;color: white; margin:5px 0 0 0%; font-size:18px; ">Select Incident Report</h3>
+</div> 
+<br/><br/>
+<!-- <div id="lsproject" class="hidden"> -->
+<div class="frame">
+<div data-ng-repeat="i in incidents" class="list_item">
+	<a href="" ng-click="selectincidentreport()" id="{{i.key}}">
+	  <div class="aa">{{i.value}}</div>
+	</a>
+	<!-- <button class="btn btn-primary btn-xs" ng-click="editproject()" id="{{i.key}}">Edit</button>   -->
+</div>
+</div>
+
+<br/><br/>
+   <button type="button" style = ";margin-left: 28%;display: block;background-color: #cb0b0f;"  class="btn col-xs-6" ng-click="create_incident()">Add incident report</button>

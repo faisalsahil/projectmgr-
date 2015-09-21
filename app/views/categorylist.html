@@ -1,0 +1,36 @@
+<div class="app-header">
+  <i class="fa fa-bars fa-2"></i> Select a Category
+</div>
+
+<!-- <div id="">
+	<h3 class="col-xs-6" style="z-index:10000;color: white; margin:8px 0 0 0%;">{{project.value}}</h3>
+</div>  
+<br/></br/>
+
+<div data-ng-repeat="i in catls">
+  <div class="aa">
+  <a href="" ng-click="selectcatls()" id="{{i.key}}">{{i.value}}</a>
+  </div>
+</div> -->
+<div id="heading">
+	<h3 class="col-xs-6" style="z-index:10000;color: white; margin:5px 0 0 0%; font-size:18px; ">{{project.value}}</h3>
+</div>
+
+
+<div id="notice" class="hidden">
+	<div class="alert notice">
+		<p>{{notice}}</p>
+	</div> 
+</div>
+<br/><br/>
+<div class="frame">
+  <div data-ng-repeat="i in catls" class="list_item" id="list_item">
+    <a href="" ng-click="selectcatls()" id="{{i.key}}">
+      <div class="aa">
+      {{i.value}}
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- <button id="unresolved" class="btn btn-primary btn-xs hidden" ng-click="unresolved()">Unresolved</button> -->

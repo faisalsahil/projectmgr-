@@ -1,0 +1,50 @@
+
+<div class="app-header">
+  <i class="fa fa-book"></i><span class="project-name">Open a Check List</span>
+</div>
+
+<!-- <div id="">
+	<h3 class="col-xs-6" style="z-index:10000;color: white; margin:8px 0 0 0%;">{{project.value}}</h3>
+</div>  
+<br/><br/>
+
+<div data-ng-repeat="i in checkls">
+  <div class="aa">
+  <a href="" ng-click="selectcheckls()" id="{{i.key}}">{{i.value}}</a>
+  </div>
+</div> -->
+<div id="heading">
+	<h3 class="col-xs-6" style="z-index:10000;color: white; margin:5px 0 0 0%; font-size:18px; ">{{project.value}}</h3>
+</div> 
+<br/><br/>
+<div class="layout">
+<div class="frame">
+<div data-ng-repeat="i in checkls" class="list_item" ng-scrollbar rebuild-on="rebuild:me">
+<a href="" ng-click="selectcheckls()" id="{{i.key}}">
+  <div class="aa">
+  {{i.value}}   ( {{i.issues}}  OPEN ISSUES ) {{i.catname}}
+  </div></a>
+</div>
+</div>
+</div>
+
+<!-- <div class="layout hidden" id="goodchkls">
+<h4>Good CheckList</h4>
+<div class="frame">
+<div data-ng-repeat="i in goodcheckls" class="list_item" ng-scrollbar rebuild-on="rebuild:me">
+<a href="" ng-click="selectcheckls()" id="{{i.key}}">
+  <div class="aa">
+  {{i.value}}
+  </div></a>
+</div>
+</div>
+</div> -->
+  <!-- <a href="javascript:void(0);" style = "float: right;padding-top: 238px;padding-right: 381px;align-items: center;"class="btn btn-default dropdown-toggle" ng-click="createchecklist()">Add New Checklist</a>  -->
+
+
+
+   <button type="button" id="add_checklist" style = "overflow: hidden; display: block; margin-left:28%; align-items: center;background-color: #cb0b0f;"  class="btn col-xs-6" ng-click="addchecklist()" data-loading-text="Please wait..."><i id = "yes" ></i>Add New Checklist</button>
+   <button type="button" id="add_checklist_disabled" style = "overflow: hidden; display: block; margin-left:28%; align-items: center;background-color: #cb0b0f;"  class="btn col-xs-6 hidden disabled"  data-loading-text="Please wait...">Please wait ...</button>
+   
+    <br/><br/>
+   <button type="button" style = ";margin-left: 28%;display: block;background-color: #cb0b0f;"  class="btn col-xs-6" ng-click="view_incident()">View incident reports</button>

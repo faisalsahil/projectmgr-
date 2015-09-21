@@ -1,0 +1,38 @@
+<div class="app-header">
+  <i class="fa fa-book"></i><span class="project-name">Start a new project</span>
+</div>
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1">
+    <div class="row">
+      <form id="projectForm" class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="nameTxt">Project Name </label>  
+            <div class="controls">
+              <input type="text" id="nameTxt" name="nameTxt" ng-model="project.name" class="form-control" capitalize-first/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="addressTxt">Location </label>  
+            <div class="controls">
+              <input type="text" id="addressTxt" name="addressTxt" ng-model="project.address" class="form-control" capitalize-first/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="contactTxt">Contact Name </label>  
+            <div class="controls">
+              <input type="text" id="contactTxt" name="contactTxt" ng-model="project.contact_info" class="form-control" capitalize-first/>
+            </div>
+          </div>
+          <!-- <h4 class="text-danger" ng-show="showError">
+            There was an error saving the project
+          </h4> -->
+          <br/>
+          <div class="button-group">
+            <button type="submit" role="submit" class="btn btn-primary btn-block" data-loading-text="Please wait. It takes few minutes..." style="width:96%;">
+              Save
+            </button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>

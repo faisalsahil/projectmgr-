@@ -1,0 +1,105 @@
+<div class="app-header">
+  Incident Report
+</div>
+
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1">
+    <div class="row">
+      <form id="reportForm" class="form-horizontal">
+          <div class="control-group ">
+            <label class="control-label" for="typeTxt">Report Type </label>  
+            <div class="controls">
+              <input type="text" id="typeTxt" name="typeTxt" ng-model="report.report_type" class="form-control" capitalize-first/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="yourNameTxt">Your Name </label>  
+            <div class="controls">
+              <input type="text" id="yourNameTxt" name="yourNameTxt" ng-model="report.your_name" class="form-control" capitalize-first/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="jobTitleTxt">Job Title </label>  
+            <div class="controls">
+              <input type="text" id="jobTitleTxt" name="jobTitleTxt" ng-model="report.job_title" class="form-control" capitalize-first/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="injuryDateTxt">Injury Date </label>  
+            <div class="controls">
+              <input type="date" id="injuryDateTxt" name="injuryDateTxt" ng-model="report.injury_date" class="form-control"/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="injuryTimeTxt">Time of Injury </label>  
+            <div class="controls">
+              <input type="time" id="injuryTimeTxt" name="injuryTimeTxt" ng-model="report.injury_time" class="form-control"/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="witnessesTxt">Witnesses </label>  
+            <div class="controls">
+              <input type="text" id="witnessesTxt" name="witnessesTxt" ng-model="report.witnesses" class="form-control" capitalize-first/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="locationTxt">Location </label>  
+            <div class="controls">
+              <input type="text" id="locationTxt" name="locationTxt" ng-model="report.location" class="form-control" capitalize-first/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="circumstancesTxt">Circumstances </label>  
+            <div class="controls">
+              <input type="text" id="circumstancesTxt" name="circumstancesTxt" ng-model="report.circumstances" class="form-control" capitalize-first/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="descriptionTxt">Description of Event</label>  
+            <div class="controls">
+              <input type="text" id="descriptionTxt" name="descriptionTxt" ng-model="report.event_discription" class="form-control" capitalize-first/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="injuriesTypeTxt">What Injuries Occurred </label>  
+            <div class="controls">
+              <input type="text" id="injuriesTypeTxt" name="injuriesTypeTxt" ng-model="report.injuries_type" class="form-control" capitalize-first/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="ppeTxt">What PPE Being Used </label>  
+            <div class="controls">
+              <input type="text" id="ppeTxt" name="ppeTxt" ng-model="report.ppe_used" class="form-control" capitalize-first/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="assistanceProvidedTxt">Medical Assistance Provided </label>  
+            <div class="controls">
+              <input type="text" id="assistanceProvidedTxt" name="assistanceProvidedTxt" ng-model="report.medical_assistance_provided" class="form-control" capitalize-first/>
+            </div>
+          </div>
+          <br/>
+          <div class="btn-group btn-block">
+            <button type="submit" role="submit" class="btn btn-primary col-xs-12" data-loading-text="Saving...">
+              Save
+            </button>
+          </div>
+
+          <div class="btn-group btn-block">
+            <button type="button" id="camera-button" class="btn btn-picture col-xs-12" ng-click="takePic()"><i class="fa fa-camera camera-button"></i></button>
+            <button type="button" id="disable-button" class="btn btn-primary col-xs-12 hidden" >Uploading image. Please wait...</button>    
+          </div>
+
+      </form>
+    </div>
+  </div>
+</div> 
+
+<br/><br/>
+<div class="col-xs-12 image_area">
+    <div ng-class="imagectrl" id="picupload" class="hidden">
+      <img ng-src={{file}} style="height:150px; width:150px;"></img>
+      <!-- <img ng-src="Logo.png" style="height:100px; width:100px;"> -->
+    </div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>  

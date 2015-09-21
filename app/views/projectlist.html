@@ -1,0 +1,19 @@
+<div class="app-header">
+  <i class="fa fa-book"></i><span class="project-name">Open Project</span>
+</div>
+
+<div id="heading">
+	<h3 class="col-xs-6" style="z-index:10000;color: white; margin:5px 0 0 0%; font-size:18px; ">Select Project</h3>
+</div> 
+<br/><br/>
+<!-- <div id="lsproject" class="hidden"> -->
+<div class="frame">
+<div data-ng-repeat="i in projectls" class="list_item">
+	<a href="" ng-click="selectproject()" id="{{i.key}}">
+	  <div class="aa">{{i.value}}</div>
+	</a>
+	<button class="btn btn-primary btn-xs" ng-click="editproject()" id="{{i.key}}">Edit</button>  
+<!-- </div> -->
+</div>
+</div>
+

@@ -1,0 +1,84 @@
+<div class="app-header">
+  <i class="fa fa-book"></i><span class="project-name">Incident Report details</span>
+</div>
+<br/><br/>
+<div class="container-fluid">
+  <div class="container" style="margin-left:10%;">
+    <div class="content" style="width:55%;">
+      <div class="row">
+        <div class="login-form">
+          <table class="table table-striped">
+            <tr>
+              <td class="td_width" style="background-color: lightgray;">Report Type</td>
+              <td>{{incident.report_type}}</td>
+            </tr>
+
+            <tr>
+              <td class="td_width" style="background-color: lightgray;">Your Name</td>
+              <td>{{incident.your_name}}</td>
+            </tr>
+
+            <tr>
+              <td class="td_width" style="background-color: lightgray;">Jot Title</td>
+              <td>{{incident.job_title}}</td>
+            </tr>
+
+            <tr>
+              <td class="td_width" style="background-color: lightgray;">Injury Date</td>
+              <td>{{incident.injury_date}}</td>
+            </tr>
+
+            <tr>
+              <td class="td_width" style="background-color: lightgray;">Time of Injury </td>
+              <td>{{incident.injury_time}}</td>
+            </tr>
+
+            <tr>
+              <td class="td_width" style="background-color: lightgray;">Witnesses</td>
+              <td>{{incident.witnesses}}</td>
+            </tr>
+
+            <tr>
+              <td class="td_width" style="background-color: lightgray;">Location</td>
+              <td>{{incident.location}}</td>
+            </tr>
+
+            <tr>
+              <td class="td_width" style="background-color: lightgray;">Circumstances</td>
+              <td>{{incident.circumstances}}</td>
+            </tr>
+
+            <tr>
+              <td class="td_width" style="background-color: lightgray;">Description of Event</td>
+              <td>{{incident.event_discription}}</td>
+            </tr>
+
+             <tr>
+              <td class="td_width" style="background-color: lightgray;">What Injuries Occurred</td>
+              <td>{{incident.injuries_type}}</td>
+            </tr>
+
+             <tr>
+              <td class="td_width" style="background-color: lightgray;">What PPE Being Used</td>
+              <td>{{incident.ppe_used}}</td>
+            </tr>
+
+             <tr>
+              <td class="td_width" style="background-color: lightgray;">Medical Assistance Provided</td>
+              <td>{{incident.medical_assistance_provided}}</td>
+            </tr>
+              
+            <div id="pic1" class="hidden">
+            <tr>
+              <td>Image</td>
+              <td><img ng-src={{filea}} style="height:150px; width:150px;"></img></td>
+            </tr>
+            </div>
+
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>         
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>

@@ -1,0 +1,77 @@
+<div>
+  <img ng-src="Logo.png" class="logo" style="height:150px; width:150px;margin: 40px 0 0 26%;">
+</div>
+<div>
+<!-- <div class="app-header" style="margin-top:0%;">
+  Login Page
+</div> -->
+<div id="userin" class="hidden">
+  <div class="alert notice">
+    <p>{{usersignup}}</p>
+  </div> 
+</div>
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1">
+    <div class="row">
+  
+      <form id="loginForm" class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="usernameTxt">Enter User Name </label>  
+            <div class="controls">
+              
+              <input type="text" id="usernameTxt" name="usernameTxt" ng-model="user.username" class="form-control"  placeholder="Type username" style="margin-top: 8px;" ng-click="scrollWin()"/>
+
+              <div style="text-align: center;"><strong>OR</strong></div>
+              <label class="control-label" for="usernameTxt">Choose from list </label>
+              <select id="usernameselect" name="usernameTxt" ng-selected="selected" ng-model="user.first_name" data-ng-options="o.name for o in credentials" class=" form-control" ng-change="usernameselect()" style="width: 95%;height: 28px;background-color: #fff;" placeholder="Select"></select>
+
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="passwordTxt">Password </label>  
+            <div class="controls">
+              <input type="password" id="passwordTxt" name="passwordTxt" ng-model="user.password" class="form-control" ng-click="scrollWin()"/>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="controls">
+              <!-- <input type="checkbox" id="rememberTxt" name="rememberTxt" ng-model="user.remember" class="form-control" /> -->
+              <input type="checkbox" name="rememberTxt" ng-model="user.remember"> 
+              <label for="rememberTxt">remember password?</label>  
+            </div>
+          </div>
+
+          <h4 class="text-danger" ng-show="invalidCredentials">
+            The username and password combination is wrong.
+          </h4>
+          <br/>
+          <div class="button-group">
+            <button type="submit" role="submit" class="btn btn-primary btn-block" data-loading-text="Validating..." style="width:96%;">
+              Sign in
+            </button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<button class="btn btn-info btn-block" ng-click="addUser()"  style="width: 71%;margin-left: 13%;margin-top:3px;">
+  Sign Up
+</button>
+
+
+
+
+<!-- <div class="col-xs-12 image_area">
+    <div ng-class="imagectrl" id="picupload" class="">
+      <img ng-src="http://codingqna.com:3000/uploads/answer/file/2946/upload20140811-1551-1q42gaqjpg" style="height:150px; width:150px;"></img>
+      <!-- <img ng-src="Logo.png" style="height:100px; width:100px;"> -->
+    <!-- </div> -->
+  <!-- </div> --> 
+
+<a href="" ng-click="forgotpassword()" style="margin-left: 13%;">Forgot your password?</a>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
